@@ -1,38 +1,47 @@
-/*
-  misc styles, nothing to do with CSS variables
-*/
-
-
 :root {
-  --base: #ffc600;
-  --spacing: 10px;
-  --blur: 10px;
+  --base: #992e1e;
+  --spacing: 0;
+  --grayscale: 0;
 }
 
-img {
-  padding: var(--spacing);
-  background-color: var(--base);
-  filter: blur(var(--blur));
+body {
+  max-height: 100vh;
+  color: #1d1f1e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: .2em;
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 .hl {
   color: var(--base);
 }
 
-
-body {
-  text-align: center;
-  background: #193549;
-  color: white;
-  font-family: 'helvetica neue', sans-serif;
-  font-weight: 100;
-  font-size: 50px;
+.main__img {
+  width: 50%;
+  margin: 0 auto;
 }
 
-.controls {
+.main__img img {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: grayscale(var(--grayscale));
+}
+
+.main__controls {
   margin-bottom: 50px;
+  font-size: 2em;
 }
 
-input {
-  width:100px;
+.main__input {
+  max-width: 100px;
 }
+
